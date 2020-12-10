@@ -8,3 +8,225 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+.header {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+    height: calc(100vh - 80px);
+    background-color: azure;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-principal {
+    background-color: cornflowerblue;
+    width: 85%;
+    height: 100%;
+    border-width: 0px 2px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+    overflow-y: scroll;
+}
+
+.contenedor-secundario {
+    width: 100%;
+    min-height: 50px;
+    background-color: aquamarine;
+    padding: 10px;
+}
+
+.contenedor-secundario:nth-child(n) {
+    border-top: 2px solid black;
+}
+
+.contenedor-secundario:last-child {
+    border-bottom: 2px solid black;
+}
+
+.contenedor-titulos {
+    padding: 10px;
+    background-color: cadetblue;
+}
+
+.folios-seleccionados {
+    width: 100%;
+    background-color: azure;
+    height: 120px;
+    padding: 5px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow-y: scroll;
+}
+
+.folio-seleccionado {
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.folio-seleccionado span {
+    padding: 30px 10px;
+}
+
+.folio-seleccionado button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-left: 2px solid black;
+    outline: none;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.folio-seleccionado button:hover {
+    background-color: red;
+}
+
+.btn-folios-seleccionados-acciones {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+    outline: none;
+    background-color: rgb(240, 46, 85);
+    color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 1s;
+}
+
+.btn-folios-seleccionados-acciones:hover { 
+    /* border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px; */
+    background-color: crimson;
+}
+
+.formulario-busqueda {
+    background-color: rgb(60, 255, 0);
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.busqueda-contenedor {
+    background-color: chartreuse;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.busqueda-contenedor-busqueda {
+    width: 40%;
+    padding: 5px 0px;
+}
+
+.busqueda-contenedor-busqueda input {
+    width: 100%;
+    padding: 10px;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 2px solid black;
+    border-right: none;
+    outline: none;
+}
+
+.busqueda-contenedor-buscar {
+    width: 30%;
+    padding: 5px 0px;
+}
+
+.busqueda-contenedor-buscar input {
+    width: 100%;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 2px solid black;
+    outline: none;
+    cursor: pointer;
+}
+
+.busqueda-contenedor-filtrar {
+    width: 30%;
+    padding: 5px 0px;
+}
+
+.busqueda-contenedor-filtrar button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid black;
+    outline: none;
+}
+
+
+
+
+.tabla-encontrados {
+    width: 100%;
+    background-color: cornsilk;
+    border-collapse: collapse;
+}
+
+.tabla-encontrados thead {
+    background-color: coral;
+    border-bottom: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+.tabla-encontrados tbody {
+    background-color: wheat;
+}
+
+.tabla-encontrados tr th, .tabla-encontrados tr td {
+    padding: 10px;
+    text-align: center;
+}
+
+.tabla-encontrados tr th:nth-child(n), .tabla-encontrados tr td:nth-child(n) {
+    border-left: 2px solid black;
+}
+
+.tabla-encontrados tr th:first-child , .tabla-encontrados tr td:first-child {
+    border-left: none;
+}
+
+.tabla-encontrados tbody tr {
+    margin: 10px 0px;
+}
+
+.tabla-encontrados tbody tr:nth-child(2n + 1) {
+    background-color: white;
+}
