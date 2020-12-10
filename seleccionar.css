@@ -75,7 +75,8 @@ body {
 .folios-seleccionados {
     width: 100%;
     background-color: azure;
-    height: 120px;
+    min-height: 60px;
+    max-height: 120px;
     padding: 5px;
 
     display: flex;
@@ -191,7 +192,10 @@ body {
 }
 
 
-
+.contenedor-tabla-encontrados {
+    width: 100%;
+    overflow-x: scroll;
+}
 
 .tabla-encontrados {
     width: 100%;
@@ -229,4 +233,45 @@ body {
 
 .tabla-encontrados tbody tr:nth-child(2n + 1) {
     background-color: white;
+}
+
+@media (max-width: 768px) {
+    .contenedor-principal {
+        width: 100%;
+    }
+
+    .folios-seleccionados {
+        justify-content: center;
+    }
+
+    .busqueda-contenedor {
+        padding: 0px 5px;
+    }
+
+    .busqueda-contenedor-busqueda {
+        width: 100%;
+        padding-bottom: 0px;
+    }
+    
+    .busqueda-contenedor-busqueda input {
+        border: 2px solid black;
+        border-bottom: 0px;
+        border-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .busqueda-contenedor-buscar {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .busqueda-contenedor-buscar input {
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+    }
+
+    .busqueda-contenedor-filtrar {
+        width: 100%;
+    }
 }
