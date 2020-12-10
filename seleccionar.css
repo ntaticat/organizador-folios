@@ -13,11 +13,12 @@ body {
     width: 100%;
     background-color: black;
     color: white;
-    height: 40px;
+    height: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    font-size: 13px;
 }
 
 .footer {
@@ -33,8 +34,8 @@ body {
 
 .main {
     width: 100%;
-    height: calc(100vh - 80px);
-    background-color: azure;
+    height: calc(100vh - 90px);
+    background-color: rgb(211, 211, 211);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -42,7 +43,7 @@ body {
 }
 
 .contenedor-principal {
-    background-color: cornflowerblue;
+    background-color: #eee;
     width: 85%;
     height: 100%;
     border-width: 0px 2px;
@@ -55,26 +56,33 @@ body {
 .contenedor-secundario {
     width: 100%;
     min-height: 50px;
-    background-color: aquamarine;
+    background-color: white;
     padding: 10px;
 }
 
 .contenedor-secundario:nth-child(n) {
-    border-top: 2px solid black;
+    border-top: 2px solid gray;
 }
 
 .contenedor-secundario:last-child {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid gray;
 }
 
 .contenedor-titulos {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    width: 100%;
     padding: 10px;
-    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px rgb(29, 29, 29);
 }
 
 .folios-seleccionados {
     width: 100%;
-    background-color: azure;
+    background-color: #eee;
     min-height: 60px;
     max-height: 120px;
     padding: 5px;
@@ -88,7 +96,7 @@ body {
 }
 
 .folio-seleccionado {
-    border: 2px solid black;
+    border: 2px solid rgb(75, 75, 75);
     border-radius: 10px;
     overflow: hidden;
     margin: 5px;
@@ -99,26 +107,27 @@ body {
 }
 
 .folio-seleccionado button {
-    background-color: black;
+    background-color: rgb(75, 75, 75);
     color: white;
     padding: 10px;
-    border-left: 2px solid black;
+    border-left: 2px solid rgb(75, 75, 75);
     outline: none;
     cursor: pointer;
     transition: 300ms;
 }
 
 .folio-seleccionado button:hover {
-    background-color: red;
+    background-color: rgb(231, 60, 60);
 }
 
 .btn-folios-seleccionados-acciones {
+    background-color: rgb(0, 146, 146);
     width: 100%;
     height: 40px;
     padding: 10px;
+    border: 2px solid rgb(75, 75, 75);
     cursor: pointer;
     outline: none;
-    background-color: rgb(240, 46, 85);
     color: white;
     border-radius: 10px;
     margin-top: 10px;
@@ -128,17 +137,17 @@ body {
 .btn-folios-seleccionados-acciones:hover { 
     /* border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px; */
-    background-color: crimson;
+    background-color: rgb(0, 114, 114);
 }
 
 .formulario-busqueda {
-    background-color: rgb(60, 255, 0);
+    background-color: #eee;
     width: 100%;
     padding: 5px 0px;
 }
 
 .busqueda-contenedor {
-    background-color: chartreuse;
+    background-color: #eee;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -154,10 +163,9 @@ body {
 .busqueda-contenedor-busqueda input {
     width: 100%;
     padding: 10px;
-    /* border-radius: 10px; */
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid rgb(75, 75, 75);
     border-right: none;
     outline: none;
 }
@@ -168,13 +176,20 @@ body {
 }
 
 .busqueda-contenedor-buscar input {
+    background-color: rgb(0, 170, 128);
+    color: white;
     width: 100%;
     padding: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    border: 2px solid black;
+    border: 2px solid rgb(75, 75, 75);
     outline: none;
     cursor: pointer;
+    transition: 1s;
+}
+
+.busqueda-contenedor-buscar input:hover {
+    background-color: rgb(0, 141, 106);
 }
 
 .busqueda-contenedor-filtrar {
@@ -183,14 +198,20 @@ body {
 }
 
 .busqueda-contenedor-filtrar button {
+    background-color: rgb(129, 116, 219);
+    color: white;
     width: 100%;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
-    border: 2px solid black;
+    border: 2px solid rgb(75, 75, 75);
     outline: none;
+    transition: 1s;
 }
 
+.busqueda-contenedor-filtrar button:hover {
+    background-color: rgb(110, 100, 175);
+}
 
 .contenedor-tabla-encontrados {
     width: 100%;
@@ -199,19 +220,20 @@ body {
 
 .tabla-encontrados {
     width: 100%;
-    background-color: cornsilk;
     border-collapse: collapse;
 }
 
 .tabla-encontrados thead {
-    background-color: coral;
+    background-color: rgb(85, 85, 85);
+    color: white;
     border-bottom: 2px;
-    border-color: black;
+    border-color: rgb(75, 75, 75);
     border-style: solid;
+    box-shadow: inset 0px 0px 10px rgb(61, 61, 61);
 }
 
 .tabla-encontrados tbody {
-    background-color: wheat;
+    background-color: #eee;
 }
 
 .tabla-encontrados tr th, .tabla-encontrados tr td {
@@ -220,7 +242,7 @@ body {
 }
 
 .tabla-encontrados tr th:nth-child(n), .tabla-encontrados tr td:nth-child(n) {
-    border-left: 2px solid black;
+    border-left: 2px solid rgb(75, 75, 75);
 }
 
 .tabla-encontrados tr th:first-child , .tabla-encontrados tr td:first-child {
@@ -233,6 +255,11 @@ body {
 
 .tabla-encontrados tbody tr:nth-child(2n + 1) {
     background-color: white;
+}
+
+.tabla-encontrados tbody tr:hover {
+    background-color: rgb(156, 156, 156);
+    color: white;
 }
 
 @media (max-width: 768px) {
