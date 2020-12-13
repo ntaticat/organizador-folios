@@ -7,6 +7,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
 
 .header {
@@ -301,4 +302,89 @@ body {
     .busqueda-contenedor-filtrar {
         width: 100%;
     }
+
+    .contenedor-acciones {
+        align-items: flex-end;
+    }
+
+    .contenedor-acciones-panel {
+        width: 100vw;
+        height: 85vh;
+    }
+}
+
+
+
+.contenedor-acciones {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: rgba(75, 75, 75, 0.75);
+}
+
+.contenedor-acciones-panel {
+    cursor: initial;
+    position: absolute;
+    background-color: aquamarine;
+    width: 60vw;
+    height:85vh;
+    z-index: 4;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.panel-acciones-opciones {
+    background-color: blueviolet;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px;
+}
+
+.panel-acciones-opciones button {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid rgb(75, 75, 75);
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    margin: 5px;
+    transition: 500ms;
+}
+
+.panel-acciones-opciones button:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.panel-acciones-contenedor {
+    background-color: #eee;
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow-y: scroll;
+}
+
+.acciones-sumar-total {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+
+.acciones-sumar-total-contenedor {
+    background-color: cadetblue;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
