@@ -1,0 +1,378 @@
+.header {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: white;
+  height: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 100%;
+  height: calc(100vh - 90px);
+  background-color: rgb(211, 211, 211);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor-principal {
+  background-color: #eee;
+  width: 85%;
+  height: 100%;
+  border-width: 0px 2px;
+  border-color: black;
+  border-style: solid;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.contenedor-secundario {
+  width: 100%;
+  min-height: 50px;
+  background-color: white;
+  padding: 10px;
+}
+
+.contenedor-secundario:nth-child(n) {
+  border-top: 2px solid gray;
+}
+
+.contenedor-secundario:last-child {
+  border-bottom: 2px solid gray;
+}
+
+.contenedor-titulos {
+  background-color: rgb(34, 34, 34);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0px 0px 10px rgb(29, 29, 29);
+}
+
+.folios-seleccionados {
+  width: 100%;
+  background-color: #eee;
+  min-height: 60px;
+  max-height: 120px;
+  padding: 5px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+
+  overflow-y: scroll;
+}
+
+.folio-seleccionado {
+  border: 2px solid rgb(75, 75, 75);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.folio-seleccionado span {
+  padding: 30px 10px;
+}
+
+.folio-seleccionado button {
+  background-color: rgb(75, 75, 75);
+  color: white;
+  padding: 10px;
+  border-left: 2px solid rgb(75, 75, 75);
+  outline: none;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.folio-seleccionado button:hover {
+  background-color: rgb(231, 60, 60);
+}
+
+.btn-folios-seleccionados-acciones {
+  background-color: rgb(0, 146, 146);
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: 2px solid rgb(75, 75, 75);
+  cursor: pointer;
+  outline: none;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: 1s;
+}
+
+.btn-folios-seleccionados-acciones:hover { 
+  /* border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; */
+  background-color: rgb(0, 114, 114);
+}
+
+.formulario-busqueda {
+  background-color: #eee;
+  width: 100%;
+  padding: 5px 0px;
+}
+
+.busqueda-contenedor {
+  background-color: #eee;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.busqueda-contenedor-busqueda {
+  width: 40%;
+  padding: 5px 0px;
+}
+
+.busqueda-contenedor-busqueda input {
+  width: 100%;
+  padding: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 2px solid rgb(75, 75, 75);
+  border-right: none;
+  outline: none;
+}
+
+.busqueda-contenedor-buscar {
+  width: 30%;
+  padding: 5px 0px;
+}
+
+.busqueda-contenedor-buscar input {
+  background-color: rgb(0, 170, 128);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border: 2px solid rgb(75, 75, 75);
+  outline: none;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.busqueda-contenedor-buscar input:hover {
+  background-color: rgb(0, 141, 106);
+}
+
+.busqueda-contenedor-filtrar {
+  width: 30%;
+  padding: 5px 0px;
+}
+
+.busqueda-contenedor-filtrar button {
+  background-color: rgb(129, 116, 219);
+  color: white;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 2px solid rgb(75, 75, 75);
+  outline: none;
+  transition: 1s;
+}
+
+.busqueda-contenedor-filtrar button:hover {
+  background-color: rgb(110, 100, 175);
+}
+
+.contenedor-tabla-encontrados {
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.tabla-encontrados {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-encontrados thead {
+  background-color: rgb(85, 85, 85);
+  color: white;
+  border-bottom: 2px;
+  border-color: rgb(75, 75, 75);
+  border-style: solid;
+  box-shadow: inset 0px 0px 10px rgb(61, 61, 61);
+}
+
+.tabla-encontrados tbody {
+  background-color: #eee;
+}
+
+.tabla-encontrados tr th, .tabla-encontrados tr td {
+  padding: 10px;
+  text-align: center;
+}
+
+.tabla-encontrados tr th:nth-child(n), .tabla-encontrados tr td:nth-child(n) {
+  border-left: 2px solid rgb(75, 75, 75);
+}
+
+.tabla-encontrados tr th:first-child , .tabla-encontrados tr td:first-child {
+  border-left: none;
+}
+
+.tabla-encontrados tbody tr {
+  margin: 10px 0px;
+}
+
+.tabla-encontrados tbody tr:nth-child(2n + 1) {
+  background-color: white;
+}
+
+.tabla-encontrados tbody tr:hover {
+  background-color: rgb(156, 156, 156);
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .contenedor-principal {
+      width: 100%;
+  }
+
+  .folios-seleccionados {
+      justify-content: center;
+  }
+
+  .busqueda-contenedor {
+      padding: 0px 5px;
+  }
+
+  .busqueda-contenedor-busqueda {
+      width: 100%;
+      padding-bottom: 0px;
+  }
+  
+  .busqueda-contenedor-busqueda input {
+      border: 2px solid black;
+      border-bottom: 0px;
+      border-radius: 10px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+
+  .busqueda-contenedor-buscar {
+      width: 100%;
+      padding-top: 0px;
+  }
+
+  .busqueda-contenedor-buscar input {
+      border-bottom-left-radius: 10px;
+      border-top-right-radius: 0px;
+  }
+
+  .busqueda-contenedor-filtrar {
+      width: 100%;
+  }
+
+  .contenedor-acciones {
+      align-items: flex-end;
+  }
+
+  .contenedor-acciones-panel {
+      width: 100vw;
+      height: 85vh;
+  }
+}
+
+
+
+.contenedor-acciones {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  background-color: rgba(75, 75, 75, 0.75);
+}
+
+.contenedor-acciones-panel {
+  cursor: initial;
+  position: absolute;
+  background-color: aquamarine;
+  width: 60vw;
+  height:85vh;
+  z-index: 4;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.panel-acciones-opciones {
+  background-color: blueviolet;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 5px;
+}
+
+.panel-acciones-opciones button {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid rgb(75, 75, 75);
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+  margin: 5px;
+  transition: 500ms;
+}
+
+.panel-acciones-opciones button:hover {
+  background-color: rgb(202, 202, 202);
+}
+
+.panel-acciones-contenedor {
+  background-color: #eee;
+  width: 100%;
+  height: calc(100% - 60px);
+  overflow-y: scroll;
+}
+
+.acciones-sumar-total {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+.acciones-sumar-total-contenedor {
+  background-color: cadetblue;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
